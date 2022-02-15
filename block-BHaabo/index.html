@@ -6,3 +6,94 @@
 - Using CSS resets is necessary.
 - Use semantic tags and keep the nesting and indentation proper. 
 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page using flexbox</title>
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/a0094d0aa6.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300&family=Roboto+Serif:wght@200&family=Roboto+Slab:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container flex">
+            <a href="#">
+                <img src="assets/media/logo.png" alt="logo" class="brand">
+            </a>
+            <nav>
+                <a href="#">
+                    <img src="assets/icons/bell.svg" alt="bell">
+                </a>
+                <a href="#" class="user">smithan</a>
+                <a href="#">
+                    <img src="assets/icons/user.svg" alt="user">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container flex">
+
+            <aside class="toolbar">
+                <div class="col">
+                    <img src="assets/icons/dashboard.svg" alt="dashboard">
+                    <span> Dashboard</span>
+                </div>
+                <div class="col active">
+                    <img src="assets/icons/article.svg" alt="articles">
+                    <span> Articles</span>
+                </div>
+                <div class="col">
+                    <img src="assets/icons/analytics.svg" alt="analytics">
+                    <span> Analytics</span>
+                </div>
+                <div class="col">
+                    <img src="assets/icons/inbox.svg" alt="inbox">
+                    <span>Inbox </span>
+                </div>
+                <div class="col">
+                    <img src="assets/icons/setting.svg" alt="settings">
+                    <span> Settings</span>
+                </div>
+                <div class="log-out">
+
+                    <img src="assets/icons/log-out.svg" alt="logout">
+                    <span>Log out</span>
+                </div>
+            </aside>
+            <section class="blog">
+                <article class="article">
+                    <img src="assets/media/01.png" alt="motivation">
+                    <h1>Why we are doing Altcampus?</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quam exercitationem voluptatem labore tenetur neque cupiditate? Explicabo quam sit at. </p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos porro, rem non repudiandae soluta quas aliquid impedit aperiam laborum inventore illo quisquam fugit, obcaecati provident earum unde. Laboriosam, ab eius.</p>
+                    <a href="#" class="article-btn">Read More</a>
+
+                </article>
+            </section>
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <div class="container flex">
+            <small>&copy;Altcampus</small>
+            <nav>
+                <a href="#">
+                    <i class="fa-brands fa-facebook-square"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter-square"></i>
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
