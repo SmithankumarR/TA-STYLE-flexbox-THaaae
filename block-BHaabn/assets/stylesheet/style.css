@@ -52,19 +52,20 @@ table {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 32px;
-    display: flex;
     
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header{
     width: 100%;
     background-color:#232946 ;
-    height: 76px;
-    line-height: 76px;
+    padding: 16px 0;
 }
 .logo{
-    width: 80px;
-    margin: 1%;
-    border-radius: 10px;
+    width: 140px;
 }
 .navbar{
     display:inline-flex;
@@ -73,12 +74,15 @@ table {
 .navbar a{
     text-decoration: none;
     text-transform: uppercase;
-    margin-left: 16px;
+    margin-left: 32px;
+    font-size: 20px;
     color: white;
 }
-.active{
-    color: green;
+.navbar .active{
+    color: rgb(138, 250, 138);
+    font-weight: 600;
 }
+/* gallery section */
 .gallery{
     padding: 40px;
     background-color: white;
@@ -91,40 +95,27 @@ table {
     color:#936E6E ;
     padding: 40px;
 }
-.col{
+.gallery img{
     width: 100%;
-    margin: 0.5%;
-    display: flex;
-    justify-content: space-evenly;
+    border-radius: 6px;
+    border:3px solid #232946;
 }
 /* column style */
-.col-1 img {
-width: 100%;
+.col-1 {
+    flex:0 1 30%;
+    margin: 16px 0;
 }
-.col-2 img{
-width: 100%;
-}
-
 /* footer */
 .footer{
     background-color: #232946;
-    height: 80px;
-    width: 100%;
     color: white;
-}
-small{
-    font-size: 24px;
-}
-nav{
-
-    display:flex;
-    flex-direction:row;
-    justify-content: flex-end;
+    padding: 32px 0;
+    font-size: 20px;
 }
 .footer a{
     color: white;
-    margin: 0 30px;
-    font-size: 28px;
+    margin-left:30px;
+    font-size: 30px;
     text-decoration: none;
 
 }
