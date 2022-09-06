@@ -1,0 +1,121 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom styles */
+*,*::before,
+*::after{
+    box-sizing: border-box;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    background-color:#232946 ;
+    padding: 16px 0;
+}
+.logo{
+    width: 140px;
+}
+.navbar{
+    display:inline-flex;
+    margin-left: 500px;
+}
+.navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 32px;
+    font-size: 20px;
+    color: white;
+}
+.navbar .active{
+    color: rgb(138, 250, 138);
+    font-weight: 600;
+}
+/* gallery section */
+.gallery{
+    padding: 40px;
+    background-color: white;
+
+}
+.gallery h1{
+    font-size: 52px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#936E6E ;
+    padding: 40px;
+}
+.gallery img{
+    width: 100%;
+    border-radius: 6px;
+    border:3px solid #232946;
+}
+/* column style */
+.col-1 {
+    flex:0 1 30%;
+    margin: 16px 0;
+}
+/* footer */
+.footer{
+    background-color: #232946;
+    color: white;
+    padding: 32px 0;
+    font-size: 20px;
+}
+.footer a{
+    color: white;
+    margin-left:30px;
+    font-size: 30px;
+    text-decoration: none;
+
+}
